@@ -36,7 +36,7 @@ body{
     width: 600px;
     transition-delay: 0.5s;
 }
-.pelis .circle{
+.pelis .circulo{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,11 +45,11 @@ body{
     justify-content: center;
     align-items: center;
 }
-.pelis .circle::before{
+.pelis .circulo::before{
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2;
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -59,20 +59,20 @@ body{
     transition-delay: 0.75s,1s;
     filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
-.pelis:hover .circle::before{
+.pelis:hover .circulo::before{
     width: 100%;
     transition-delay: 0.5s;
     height: 100%;
     border-radius: 20px;
     background: var(--clr);
 }
-.pelis .circle .logo{
+.pelis .circulo .logo{
     position: relative;
     width: 250px;
     transition: 0.5s;
     transition-delay: 0.5s;
 }
-.pelis:hover .circle .logo{
+.pelis:hover .circulo .logo{
     transform: scale(0);
     transition-delay: 0s;
 }
@@ -127,6 +127,219 @@ body{
     font-weight: 600;
     margin-top: 10px;
 }
+
+
+.pelis-2{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.pelis-2:hover{
+    width: 600px;
+    transition-delay: 0.5s;
+}
+.pelis-2 .circulo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pelis-2 .circulo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 8px solid var(--clr);
+    background: #191919;
+    transition: 0.5s, background 1s;
+    transition-delay: 0.75s,1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+.pelis-2:hover .circulo::before{
+    width: 100%;
+    transition-delay: 0.5s;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+.pelis-2 .circulo .logo{
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.pelis-2:hover .circulo .logo{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+.pelis-2 .peli_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+.pelis-2:hover .peli_img{
+    transition-delay: 0.75s;
+    transform: translate(-50%,-50%) scale(1) rotate(15deg);
+    top: 45%;
+    left: 75%;
+    height: 250px;
+    width: 350px;
+}
+.pelis-2 .contenido{
+    position:absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.pelis-2:hover .contenido{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+.pelis-2 .contenido h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.4em;
+    line-height: 1em;
+}
+.pelis-2 .contenido p{
+    color: #fff;
+}
+.pelis-2 .contenido a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.pelis-3{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.pelis-3:hover{
+    width: 600px;
+    transition-delay: 0.5s;
+}
+.pelis-3 .circulo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pelis-3 .circulo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 8px solid var(--clr);
+    background: #191919;
+    transition: 0.5s, background 1s;
+    transition-delay: 0.75s,1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+.pelis-3:hover .circulo::before{
+    width: 100%;
+    transition-delay: 0.5s;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+.pelis-3 .circulo .logo{
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.pelis-3:hover .circulo .logo{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+.pelis-3 .peli_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+.pelis-3:hover .peli_img{
+    transition-delay: 0.75s;
+    transform: translate(-50%,-50%) scale(1) rotate(15deg);
+    top: 45%;
+    left: 75%;
+    height: 250px;
+    width: 350px;
+}
+.pelis-3 .contenido{
+    position:absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.pelis-3:hover .contenido{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+.pelis-3 .contenido h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.4em;
+    line-height: 1em;
+}
+.pelis-3 .contenido p{
+    color: #fff;
+}
+.pelis-3 .contenido a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 /* Estilos del carrusel */
 .carousel {
     position: relative;
