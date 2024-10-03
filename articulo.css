@@ -1,28 +1,28 @@
+:root {
+    --clr: rgb(1, 17, 244); /
+}
 
-
-body{
+body {
     background-image: url(img/espacio.png);
-  background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     cursor: url('img/sabledeluz.png'), auto;
     font-family: Starjedi;
-
-}
-*{
-    font-family: 'Poppins',sans-serif;
-    padding: 0;
-    margin: 0;
-}
-body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #151F28;
 }
-.pelis{
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.pelis, .pelis-2, .pelis-3 {
     position: relative;
     width: 350px;
     height: 350px;
@@ -32,11 +32,13 @@ body{
     align-items: center;
     transition: 0.5s;
 }
-.pelis:hover{
+
+.pelis:hover, .pelis-2:hover, .pelis-3:hover {
     width: 600px;
     transition-delay: 0.5s;
 }
-.pelis .circulo{
+
+.pelis .circulo, .pelis-2 .circulo, .pelis-3 .circulo {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,7 +47,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.pelis .circulo::before{
+
+.pelis .circulo::before, .pelis-2 .circulo::before, .pelis-3 .circulo::before {
     content: '';
     position: absolute;
     top: 0;
@@ -55,45 +58,51 @@ body{
     border-radius: 50%;
     border: 8px solid var(--clr);
     background: #191919;
-    transition: 0.5s, background 0.5s;
-    transition-delay: 0.75s,1s;
+    transition: 0.5s, background 1s;
+    transition-delay: 0.75s, 1s;
     filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
-.pelis:hover .circulo::before{
+
+.pelis:hover .circulo::before, .pelis-2:hover .circulo::before, .pelis-3:hover .circulo::before {
     width: 100%;
-    transition-delay: 0.5s;
     height: 100%;
     border-radius: 20px;
     background: var(--clr);
+    transition-delay: 0.5s;
 }
-.pelis .circulo .logo{
+
+.pelis .circulo .logo, .pelis-2 .circulo .logo, .pelis-3 .circulo .logo {
     position: relative;
     width: 250px;
     transition: 0.5s;
     transition-delay: 0.5s;
 }
-.pelis:hover .circulo .logo{
+
+.pelis:hover .circulo .logo, .pelis-2:hover .circulo .logo, .pelis-3:hover .circulo .logo {
     transform: scale(0);
     transition-delay: 0s;
 }
-.pelis .peli_img{
+
+.pelis .peli_img, .pelis-2 .peli_img, .pelis-3 .peli_img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(0) rotate(315deg);
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
     height: 300px;
     transition: 0.5s ease-in-out;
 }
-.pelis:hover .peli_img{
+
+.pelis:hover .peli_img, .pelis-2:hover .peli_img, .pelis-3:hover .peli_img {
     transition-delay: 0.75s;
-    transform: translate(-50%,-50%) scale(1) rotate(15deg);
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
     top: 45%;
     left: 75%;
     height: 250px;
     width: 350px;
 }
-.pelis .contenido{
-    position:absolute;
+
+.pelis .contenido, .pelis-2 .contenido, .pelis-3 .contenido {
+    position: absolute;
     width: 50%;
     left: 20%;
     padding: 20px 20px 20px 40px;
@@ -101,22 +110,26 @@ body{
     transition: 0.5s;
     visibility: hidden;
 }
-.pelis:hover .contenido{
+
+.pelis:hover .contenido, .pelis-2:hover .contenido, .pelis-3:hover .contenido {
     transition-delay: 0.75s;
     opacity: 1;
     visibility: visible;
     left: 0;
 }
-.pelis .contenido h2{
+
+.pelis .contenido h2, .pelis-2 .contenido h2, .pelis-3 .contenido h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 2.4em;
     line-height: 1em;
 }
-.pelis .contenido p{
+
+.pelis .contenido p, .pelis-2 .contenido p, .pelis-3 .contenido p {
     color: #fff;
 }
-.pelis .contenido a{
+
+.pelis .contenido a, .pelis-2 .contenido a, .pelis-3 .contenido a {
     position: relative;
     color: #111;
     background: #fff;
@@ -128,216 +141,44 @@ body{
     margin-top: 10px;
 }
 
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
 
-.pelis-2{
-    position: relative;
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
+.carousel-images {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+    transition: transform 0.5s ease-in-out;
 }
-.pelis-2:hover{
-    width: 600px;
-    transition-delay: 0.5s;
-}
-.pelis-2 .circulo{
-    position: absolute;
+
+.carousel-images img {
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
 }
-.pelis-2 .circulo::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 2;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 8px solid var(--clr);
-    background: #191919;
-    transition: 0.5s, background 1s;
-    transition-delay: 0.75s,1s;
-    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
-}
-.pelis-2:hover .circulo::before{
-    width: 100%;
-    transition-delay: 0.5s;
-    height: 100%;
-    border-radius: 20px;
-    background: var(--clr);
-}
-.pelis-2 .circulo .logo{
-    position: relative;
-    width: 250px;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-}
-.pelis-2:hover .circulo .logo{
-    transform: scale(0);
-    transition-delay: 0s;
-}
-.pelis-2 .peli_img{
+
+button {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0) rotate(315deg);
-    height: 300px;
-    transition: 0.5s ease-in-out;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFD700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
 }
-.pelis-2:hover .peli_img{
-    transition-delay: 0.75s;
-    transform: translate(-50%,-50%) scale(1) rotate(15deg);
-    top: 45%;
-    left: 75%;
-    height: 250px;
-    width: 350px;
+
+#prev {
+    left: 10px;
 }
-.pelis-2 .contenido{
-    position:absolute;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    opacity: 0;
-    transition: 0.5s;
-    visibility: hidden;
-}
-.pelis-2:hover .contenido{
-    transition-delay: 0.75s;
-    opacity: 1;
-    visibility: visible;
-    left: 0;
-}
-.pelis-2 .contenido h2{
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 2.4em;
-    line-height: 1em;
-}
-.pelis-2 .contenido p{
-    color: #fff;
-}
-.pelis-2 .contenido a{
-    position: relative;
-    color: #111;
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 10px;
-}
-.pelis-3{
-    position: relative;
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-}
-.pelis-3:hover{
-    width: 600px;
-    transition-delay: 0.5s;
-}
-.pelis-3 .circulo{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pelis-3 .circulo::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 2;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 8px solid var(--clr);
-    background: #191919;
-    transition: 0.5s, background 1s;
-    transition-delay: 0.75s,1s;
-    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
-}
-.pelis-3:hover .circulo::before{
-    width: 100%;
-    transition-delay: 0.5s;
-    height: 100%;
-    border-radius: 20px;
-    background: var(--clr);
-}
-.pelis-3 .circulo .logo{
-    position: relative;
-    width: 250px;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-}
-.pelis-3:hover .circulo .logo{
-    transform: scale(0);
-    transition-delay: 0s;
-}
-.pelis-3 .peli_img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0) rotate(315deg);
-    height: 300px;
-    transition: 0.5s ease-in-out;
-}
-.pelis-3:hover .peli_img{
-    transition-delay: 0.75s;
-    transform: translate(-50%,-50%) scale(1) rotate(15deg);
-    top: 45%;
-    left: 75%;
-    height: 250px;
-    width: 350px;
-}
-.pelis-3 .contenido{
-    position:absolute;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    opacity: 0;
-    transition: 0.5s;
-    visibility: hidden;
-}
-.pelis-3:hover .contenido{
-    transition-delay: 0.75s;
-    opacity: 1;
-    visibility: visible;
-    left: 0;
-}
-.pelis-3 .contenido h2{
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 2.4em;
-    line-height: 1em;
-}
-.pelis-3 .contenido p{
-    color: #fff;
-}
-.pelis-3 .contenido a{
-    position: relative;
-    color: #111;
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 10px;
+
+#next {
+    right: 10px;
 }
 
 /* Estilos del carrusel */
