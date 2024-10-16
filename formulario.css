@@ -2,9 +2,7 @@
     font-family: 'Starjedi';
     src: url(Starjedi.ttf) format('truetype');
 }
-/* styles.css */
 
-/* Paleta de Colores Inspirada en Star Wars */
 
 body{
     background-image: url(img/espacio.png);
@@ -16,12 +14,12 @@ body{
     font-family: Starjedi;
 
 }
-/* Menú de Navegación */
+
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1d; /* Color oscuro */
+    background-color: #1a1a1d; 
     padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -37,19 +35,18 @@ body{
 .nav-list li {
     display: inline;
 }
-
 .nav-list a {
     text-decoration: none;
-    color: #FFD700; /* Color amarillo */
+    color: #FFD700; 
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
 .nav-list a:hover {
-    color: #00BFFF; /* Color azul */
+    color: #00BFFF; 
 }
 
-/* Contenedor del Formulario de Contacto */
+
 .contact-container {
     display: flex;
     justify-content: center;
@@ -58,10 +55,10 @@ body{
     padding: 20px;
 }
 
-/* Estilo del Formulario */
+
 form#contactForm {
-    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
-    backdrop-filter: blur(10px); /* Efecto difuminado */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 10px;
