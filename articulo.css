@@ -1,7 +1,7 @@
-:root {
-    --clr: rgb(1, 17, 244); /
+@font-face {
+    font-family: 'Starjedi';
+    src: url(Starjedi.ttf) format('truetype');
 }
-
 body {
     background-image: url(img/espacio.png);
     background-size: cover;
@@ -15,6 +15,44 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; 
+    z-index: 1000; 
+    padding: 10px 0; 
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.nav-list li a {
+    color: #FFD700; 
+    text-decoration: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #FFD700; /* Color amarillo */
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #00BFFF; /* Color azul */
+}
+:root {
+    --clr: rgb(1, 17, 244); /
+}
+
+
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -143,6 +181,7 @@ body {
 
 /* Estilos del carrusel */
 .carousel {
+    margin-top: 60px;
     position: relative;
     width: 80%;
     margin: 20px auto;
