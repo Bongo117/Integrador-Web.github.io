@@ -5,18 +5,6 @@
     font-style: normal;
 }
 
-.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-image: url('ruta/de/tu/fondo-header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    position: relative;
-}
 
 body {
     background-image: url('img/espacio.png'); /* Imagen de fondo */
@@ -25,12 +13,69 @@ body {
     background-position: center center; /* Centra la imagen */
     background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
     font-family: 'Starjedi', sans-serif; /* Fuente personalizada */
-    color: #C5C6C7; /* Texto gris claro */
+    color: #ffffff; /* Texto gris claro */
 }
+
+.container {
+    display: flex;
+    justify-content: center; /* Espacio uniforme entre imágenes */
+    align-items: center; /* Alineación vertical si las imágenes son de diferentes tamaños */    
+    gap: 100px; /* Espacio entre imágenes */
+    margin-top: 50px; /* Margen superior para separar de otros elementos */
+
+
+}
+
+img {
+    max-width: 30%; /* Controla el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+p{
+    font-size: small;
+
+}
+
+
 h1, h2{
     color: #FFD700;
 }
-
+h1{
+    text-align: center;
+}
+.search-bar {
+    margin-top: 20px; /* Margen superior para separar de otros elementos */
+    max-width: 600px; /* Ancho máximo de la barra */
+    display: flex; /* Para alinear el input y el botón */
+}
+/* Estilo para el campo de entrada */
+.search-bar input[type="text"] {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: 2px solid yellow; /* Borde amarillo */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #222; /* Fondo oscuro para el input */
+    color: #f7f7f7; /* Color del texto */
+}
+/* Estilo para el botón */
+.search-bar button {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #f7f700; /* Color de fondo amarillo */
+    color: black; /* Color del texto negro */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    display: none;
+    justify-content: end;
+}
+/* Cambiar color del botón en hover */
+.search-bar button:hover {
+    background-color: #c8c800; /* Color de fondo al pasar el ratón */
+    display: flex;
+    justify-content: end;
+}
 /* Menú de Navegación */
 .navbar {
     display: flex;
@@ -151,3 +196,153 @@ h1, h2{
 .menu-toggle {
     display: none;
 }
+
+
+.footer {
+    background-color: #1a1a1d; /* Gris oscuro */
+    color: #FFD700; /* Amarillo */
+    padding: 40px 20px;
+    font-family: 'Star Jedi', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Flexibilidad para adaptarse */
+    margin: 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #C5C6C7; /* Texto gris claro */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00BFFF; /* Azul */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Asegura que los iconos sean visibles */
+    transition: filter 0.3s;
+}
+
+.social-icons a img:hover {
+    filter: brightness(0) invert(0.7); /* Cambio de color al pasar el ratón */
+}
+
+/* Footer Estilos */
+
+.footer {
+    background-color: #1a1a1d; /* Gris oscuro */
+    color: #FFD700; /* Amarillo */
+    padding: 40px 20px;
+    font-family: 'Star Jedi', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Flexibilidad para adaptarse */
+    margin: 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #C5C6C7; /* Texto gris claro */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00BFFF; /* Azul */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Asegura que los iconos sean visibles */
+    transition: filter 0.3s;
+}
+
+.social-icons a img:hover {
+    filter: brightness(0) invert(0.7); /* Cambio de color al pasar el ratón */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #FFD700;
+    padding-top: 10px;
+    color: #C5C6C7;
+    font-size: 0.9em;
+}
+
+/* Responsive Design para el Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+

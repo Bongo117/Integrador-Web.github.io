@@ -103,8 +103,8 @@ form#contactForm textarea::placeholder {
 form#contactForm button {
     width: 100%;
     padding: 10px;
-    background-color: #00BFFF; /* Azul */
-    color: #fff;
+    background-color: #f9f105; /* Amarillo */
+    color: #020202;
     border: none;
     border-radius: 5px;
     cursor: pointer;
