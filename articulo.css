@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: 'Starjedi';
     src: url('Starjedi.ttf') format('woff2');
     font-weight: normal;
@@ -18,7 +18,7 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-.navbar {
+.Barra {
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,33 +31,33 @@ body {
 }
 
 
-.nav-list {
+.CosasBarra {
     list-style: none;
     display: flex;
     gap: 40px;
     margin: 0;
     padding: 0;
 }
-.nav-list a {
+.CosasBarra a {
     text-decoration: none;
     color: #FFD700; 
     font-size: 1.2em;
     transition: color 0.3s;
     padding: 8px 12px;
 }
-.nav-list li a {
+.CosasBarra li a {
     color: #FFD700; 
     text-decoration: none;
 }
 
-.nav-list a {
+.CosasBarra a {
     text-decoration: none;
     color: #FFD700; 
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
-.nav-list a:hover {
+.CosasBarra a:hover {
     color: #00BFFF; 
 }
 
@@ -238,5 +238,6 @@ button {
 
 #siguiente {
     right: 10px;
-}
+}    
+
 

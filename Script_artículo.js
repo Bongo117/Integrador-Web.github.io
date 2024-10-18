@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
     const carouselImages = document.querySelector('.imagenescarru');
     const pelis = document.querySelectorAll('.pelis');
     let currentIndex = 0;

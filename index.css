@@ -77,7 +77,7 @@ h1{
     justify-content: end;
 }
 /* Menú de Navegación */
-.navbar {
+.Barra {
     display: flex;
     justify-content: center; /* Centra el menú horizontalmente */
     align-items: center;
@@ -88,7 +88,7 @@ h1{
     z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
 }
 
-.nav-list {
+.CosasBarra {
     list-style: none;
     display: flex;
     gap: 40px;
@@ -96,11 +96,11 @@ h1{
     padding: 0;
 }
 
-.nav-list li {
+.CosasBarra li {
     position: relative; /* Necesario para posicionar el submenú */
 }
 
-.nav-list a {
+.CosasBarra a {
     text-decoration: none;
     color: #FFD700; /* Amarillo como los sables */
     font-family: 'Starjedi', sans-serif;
@@ -109,7 +109,7 @@ h1{
     padding: 8px 12px;
 }
 
-.nav-list a:hover {
+.CosasBarra a:hover {
     color: #00BFFF; /* Azul como los sables Jedi */
 }
 
@@ -156,7 +156,7 @@ h1{
         width: 100%;
         background-color: #1a1a1d;
         position: absolute;
-        top: 60px; /* Ajusta según la altura del navbar */
+        top: 60px; /* Ajusta según la altura del Barra */
         left: 0;
     }
 
