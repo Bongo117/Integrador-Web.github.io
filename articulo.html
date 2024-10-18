@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrusel Peliculas</title>
     <link rel="stylesheet" href="articulo.css">
+    <script src="Script_artículo.js" defer></script>
 </head>
 
 <body>
@@ -17,8 +18,8 @@
         </ul>
     </nav>
     <div class="carousel">
-        <div class="carousel-images">
-            <div class="pelis">
+        <div class="imagenescarru">
+            <div class="pelis activo">
                 <div class="circulo" style="--clr:#f4cc01;">
                     <img src="img/Episodio 1.png" alt="" class="logo">
                 </div>
@@ -29,7 +30,7 @@
                 </div>
                 <img src="img/SW1.jpeg" alt="" class="peli_img">
             </div>
-            <div class="pelis-2">
+            <div class="pelis">
                 <div class="circulo" style="--clr:#0105f4;">
                     <img src="img/Episodio 2.png" alt="" class="logo">
                 </div>
@@ -40,7 +41,7 @@
                 </div>
                 <img src="img/SW2.jpg" alt="" class="peli_img">
             </div>
-            <div class="pelis-3">
+            <div class="pelis">
                 <div class="circulo" style="--clr:#bf0505;">
                     <img src="img/Episodio3.png" alt="" class="logo">
                 </div>
@@ -51,11 +52,12 @@
                 </div>
                 <img src="img/SW3.jpg" alt="" class="peli_img">
             </div>
+            
         </div>
     </div>
 
-    <button id="prev">&#10094;</button>
-    <button id="next">&#10095;</button>
+    <button id="anterior">&#10094;</button>
+    <button id="siguiente">&#10095;</button>
 
     <script src="carrusel.js"></script>
 </body>

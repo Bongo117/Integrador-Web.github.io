@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Starjedi';
-    src: url(Starjedi.ttf) format('truetype');
+    src: url('Starjedi.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 body {
     background-image: url(img/espacio.png);
@@ -9,7 +11,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     cursor: url('img/sabledeluz.png'), auto;
-    font-family: Starjedi;
+    font-family: 'Starjedi', sans-serif;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,20 +22,29 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333; 
     z-index: 1000; 
     padding: 10px 0; 
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
 
 .nav-list {
     list-style: none;
+    display: flex;
+    gap: 40px;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
 }
-
+.nav-list a {
+    text-decoration: none;
+    color: #FFD700; 
+    font-size: 1.2em;
+    transition: color 0.3s;
+    padding: 8px 12px;
+}
 .nav-list li a {
     color: #FFD700; 
     text-decoration: none;
@@ -40,43 +52,50 @@ body {
 
 .nav-list a {
     text-decoration: none;
-    color: #FFD700; /* Color amarillo */
+    color: #FFD700; 
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
 .nav-list a:hover {
-    color: #00BFFF; /* Color azul */
+    color: #00BFFF; 
 }
+
 :root {
     --clr: rgb(1, 17, 244); /
 }
 
 
-
-* {
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
-.pelis, .pelis-2, .pelis-3 {
+.pelis{
     position: relative;
     width: 350px;
     height: 350px;
+    min-width: 100%; 
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.5s;
+    opacity: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.pelis.activo {
+    display: flex;
+    transform: translateX(0); 
+    opacity: 1;
 }
 
-.pelis:hover, .pelis-2:hover, .pelis-3:hover {
+.pelis:not(.activo) {
+    transform: translateX(100%);
+    opacity: 0; 
+}
+
+.pelis:hover {
     width: 600px;
     transition-delay: 0.5s;
 }
 
-.pelis .circulo, .pelis-2 .circulo, .pelis-3 .circulo {
+.pelis .circulo {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -86,7 +105,7 @@ body {
     align-items: center;
 }
 
-.pelis .circulo::before, .pelis-2 .circulo::before, .pelis-3 .circulo::before {
+.pelis .circulo::before {
     content: '';
     position: absolute;
     top: 0;
@@ -101,7 +120,7 @@ body {
     filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
 
-.pelis:hover .circulo::before, .pelis-2:hover .circulo::before, .pelis-3:hover .circulo::before {
+.pelis:hover .circulo::before {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -109,19 +128,19 @@ body {
     transition-delay: 0.5s;
 }
 
-.pelis .circulo .logo, .pelis-2 .circulo .logo, .pelis-3 .circulo .logo {
+.pelis .circulo .logo{
     position: relative;
     width: 250px;
     transition: 0.5s;
     transition-delay: 0.5s;
 }
 
-.pelis:hover .circulo .logo, .pelis-2:hover .circulo .logo, .pelis-3:hover .circulo .logo {
+.pelis:hover .circulo .logo {
     transform: scale(0);
     transition-delay: 0s;
 }
 
-.pelis .peli_img, .pelis-2 .peli_img, .pelis-3 .peli_img {
+.pelis .peli_img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,7 +149,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.pelis:hover .peli_img, .pelis-2:hover .peli_img, .pelis-3:hover .peli_img {
+.pelis:hover .peli_img{
     transition-delay: 0.75s;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
     top: 45%;
@@ -139,7 +158,7 @@ body {
     width: 350px;
 }
 
-.pelis .contenido, .pelis-2 .contenido, .pelis-3 .contenido {
+.pelis .contenido {
     position: absolute;
     width: 50%;
     left: 20%;
@@ -149,25 +168,25 @@ body {
     visibility: hidden;
 }
 
-.pelis:hover .contenido, .pelis-2:hover .contenido, .pelis-3:hover .contenido {
+.pelis:hover .contenido{
     transition-delay: 0.75s;
     opacity: 1;
     visibility: visible;
     left: 0;
 }
 
-.pelis .contenido h2, .pelis-2 .contenido h2, .pelis-3 .contenido h2 {
+.pelis .contenido h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 2.4em;
     line-height: 1em;
 }
 
-.pelis .contenido p, .pelis-2 .contenido p, .pelis-3 .contenido p {
+.pelis .contenido p {
     color: #fff;
 }
 
-.pelis .contenido a, .pelis-2 .contenido a, .pelis-3 .contenido a {
+.pelis .contenido a {
     position: relative;
     color: #111;
     background: #fff;
@@ -178,8 +197,6 @@ body {
     font-weight: 600;
     margin-top: 10px;
 }
-
-/* Estilos del carrusel */
 .carousel {
     margin-top: 60px;
     position: relative;
@@ -190,12 +207,12 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-images {
+.imagenescarru {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
-.carousel-images img {
+.imagenescarru img {
     width: 100%;
     height: auto;
 }
@@ -207,55 +224,16 @@ button {
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFD700;
     border: none;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     font-size: 2em;
 }
 
-#prev {
+#anterior {
     left: 10px;
 }
 
-#next {
+#siguiente {
     right: 10px;
 }
 
-/* Estilos del carrusel */
-.carousel {
-    position: relative;
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-images img {
-    width: 100%;
-    height: auto;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #FFD700;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 2em;
-}
-
-#prev {
-    left: 10px;
-}
-
-#next {
-    right: 10px;
-}

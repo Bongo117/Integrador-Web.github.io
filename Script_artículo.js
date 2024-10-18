@@ -1,38 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const carouselImages = document.querySelector('.carousel-images');
-    const pelis = document.querySelectorAll('.pelis, .pelis-2, .pelis-3');
-    const prevButton = document.createElement('button');
-    const nextButton = document.createElement('button');
+    const carouselImages = document.querySelector('.imagenescarru');
+    const pelis = document.querySelectorAll('.pelis');
     let currentIndex = 0;
+    const totalPelis = pelis.length;
 
-    
-    prevButton.id = 'prev';
-    prevButton.innerHTML = '&#10094;';
-    nextButton.id = 'next';
-    nextButton.innerHTML = '&#10095;';
-    document.body.appendChild(prevButton);
-    document.body.appendChild(nextButton);
-
-  
     function updateCarousel() {
+        pelis.forEach((peli, index) => {
+            peli.style.opacity = '0'; 
+            if (index === currentIndex) {
+                peli.classList.add('activo'); 
+                peli.style.opacity = '1'; 
+                peli.style.transform = 'translateX(0)'; 
+            } else if (index < currentIndex) {
+                peli.style.transform = 'translateX(-100%)'; 
+            } else {
+                peli.style.transform = 'translateX(100%)'; 
+            }
+        });
         const width = pelis[0].clientWidth;
         carouselImages.style.transform = `translateX(-${currentIndex * width}px)`;
     }
 
-   
-    prevButton.addEventListener('click', function () {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : pelis.length - 1;
+    document.getElementById('siguiente').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalPelis; 
         updateCarousel();
     });
 
-    nextButton.addEventListener('click', function () {
-        currentIndex = (currentIndex < pelis.length - 1) ? currentIndex + 1 : 0;
+    document.getElementById('anterior').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalPelis) % totalPelis; 
         updateCarousel();
     });
 
-    
-    window.addEventListener('resize', updateCarousel);
-
-   
     updateCarousel();
 });
+
