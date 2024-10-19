@@ -2,8 +2,6 @@
     font-family: 'Starjedi';
     src: url(Starjedi.ttf) format('truetype');
 }
-
-
 body {
     background-size: cover; 
     transition: background-image 0.5s ease-in-out; 
@@ -17,7 +15,6 @@ body{
     background-attachment: fixed;
     cursor: url('img/Sable\ de\ luz.png'), auto;
     font-family: Starjedi;
-
 }
 
 .Barra {
@@ -162,17 +159,6 @@ form#contactForm button:hover {
     cursor: pointer;
 }
 
-/* Responsividad */
-@media (max-width: 600px) {
-    .Barra {
-        flex-direction: column;
-    }
-    
-    .CosasBarra {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
 /* Footer Estilos */
 
 .footer {
@@ -189,99 +175,42 @@ form#contactForm button:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .footer-section {
     flex: 1 1 200px; 
     margin: 20px;
 }
-
 .footer-section h3 {
     border-bottom: 2px solid #FFD700;
     padding-bottom: 10px;
     margin-bottom: 15px;
     color: #FFD700;
 }
-
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
-
 .footer-section ul li {
     margin-bottom: 10px;
 }
-
 .footer-section ul li a {
     color: #C5C6C7; 
     text-decoration: none;
     transition: color 0.3s;
 }
-
-.footer-section ul li a:hover {
-    color: #00BFFF; 
-}
-
-/* Footer Estilos */
-
-.footer {
-    background-color: #1a1a1d; 
-    color: #FFD700; 
-    padding: 40px 20px;
-    font-family: 'Star Jedi', sans-serif;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    flex: 1 1 200px; 
-    margin: 20px;
-}
-
-.footer-section h3 {
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    color: #FFD700;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: #C5C6C7; 
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
 .footer-section ul li a:hover {
     color: #00BFFF;
 }
-
 .social-icons {
     display: flex;
     gap: 15px;
     justify-content: space-between;
 }
-
 .social-icons a img {
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(1); 
     transition: filter 0.3s;
 }
-
 .social-icons a img:hover {
     filter: brightness(0) invert(0.7); 
 }
