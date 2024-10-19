@@ -21,6 +21,14 @@
         carouselImages.style.transform = `translateX(-${currentIndex * width}px)`;
     }
 
+    const images = [
+        'url("img/fondo2.jpg")',
+        'url("img/fondo3.jpg")',
+        'url("img/fondo4.jpg")',
+        'url("img/fondo5.jpg")',
+    ];
+    
+
     document.getElementById('siguiente').addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % totalPelis; 
         updateCarousel();
@@ -33,4 +41,3 @@
 
     updateCarousel();
 });
-

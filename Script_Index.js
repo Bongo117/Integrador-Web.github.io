@@ -28,10 +28,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // Iniciar el autoplay
     startAutoplay();
 });
+const images = [
+    'url("img/fondo2.jpg")',
+    'url("img/fondo3.jpg")',
+    'url("img/fondo4.jpg")',
+    'url("img/fondo5.jpg")',
+];
 
+let currentIndex = 0;
 
+// Función para cambiar el fondo
+function changeBackground() {
+    document.body.style.backgroundImage = images[currentIndex];
 
+    currentIndex = (currentIndex + 1) % images.length; // Volver al inicio al llegar al final
+}
 
+// Cambiar el fondo cada 5 segundos 
+setInterval(changeBackground, 5000);
+changeBackground();
 
 
 let i = 0;

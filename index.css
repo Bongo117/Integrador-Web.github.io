@@ -5,30 +5,33 @@
     font-style: normal;
 }
 
+body {
+    background-size: cover; 
+    transition: background-image 0.5s ease-in-out; 
+}
 
 body {
-    background-image: url('img/espacio.png'); /* Imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen */
-    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
-    font-family: 'Starjedi', sans-serif; /* Fuente personalizada */
-    color: #ffffff; /* Texto gris claro */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    font-family: 'Starjedi', sans-serif; 
+    color: #ffffff; 
 }
 
 .container {
     display: flex;
-    justify-content: center; /* Espacio uniforme entre imágenes */
-    align-items: center; /* Alineación vertical si las imágenes son de diferentes tamaños */    
-    gap: 100px; /* Espacio entre imágenes */
-    margin-top: 50px; /* Margen superior para separar de otros elementos */
+    justify-content: center; 
+    align-items: center; 
+    gap: 100px; 
+    margin-top: 50px; 
 
 
 }
 
 img {
-    max-width: 30%; /* Controla el tamaño de las imágenes */
-    height: auto; /* Mantiene la proporción de las imágenes */
+    max-width: 30%; 
+    height: auto; 
 }
 p{
     font-size: small;
@@ -43,49 +46,49 @@ h1{
     text-align: center;
 }
 .search-bar {
-    margin-top: 20px; /* Margen superior para separar de otros elementos */
-    max-width: 600px; /* Ancho máximo de la barra */
-    display: flex; /* Para alinear el input y el botón */
+    margin-top: 20px; 
+    max-width: 600px; 
+    display: flex; 
 }
 /* Estilo para el campo de entrada */
 .search-bar input[type="text"] {
-    flex: 1; /* Ocupa todo el espacio disponible */
-    padding: 10px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de la fuente */
-    border: 2px solid yellow; /* Borde amarillo */
-    border-radius: 4px; /* Bordes redondeados */
-    background-color: #222; /* Fondo oscuro para el input */
-    color: #f7f7f7; /* Color del texto */
+    flex: 1; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2px solid yellow; 
+    border-radius: 4px; 
+    background-color: #222; 
+    color: #f7f7f7; 
 }
 /* Estilo para el botón */
 .search-bar button {
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: #f7f700; /* Color de fondo amarillo */
-    color: black; /* Color del texto negro */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de mano */
-    font-size: 16px; /* Tamaño de la fuente */
-    font-weight: bold; /* Texto en negrita */
+    padding: 10px 20px; 
+    background-color: #f7f700; 
+    color: black; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
     display: none;
     justify-content: end;
 }
 /* Cambiar color del botón en hover */
 .search-bar button:hover {
-    background-color: #c8c800; /* Color de fondo al pasar el ratón */
+    background-color: #c8c800; 
     display: flex;
     justify-content: end;
 }
 /* Menú de Navegación */
 .Barra {
     display: flex;
-    justify-content: center; /* Centra el menú horizontalmente */
+    justify-content: center;
     align-items: center;
-    background-color: #1a1a1d; /* Gris oscuro */
+    background-color: #1a1a1d; 
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     position: relative;
-    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+    z-index: 1000; 
 }
 
 .CosasBarra {
@@ -97,12 +100,12 @@ h1{
 }
 
 .CosasBarra li {
-    position: relative; /* Necesario para posicionar el submenú */
+    position: relative; 
 }
 
 .CosasBarra a {
     text-decoration: none;
-    color: #FFD700; /* Amarillo como los sables */
+    color: #FFD700; 
     font-family: 'Starjedi', sans-serif;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -110,18 +113,17 @@ h1{
 }
 
 .CosasBarra a:hover {
-    color: #00BFFF; /* Azul como los sables Jedi */
+    color: #00BFFF; 
 }
 
-/* Estilos para el Dropdown */
 .dropdown-content {
-    display: none; /* Oculto por defecto */
+    display: none; 
     position: absolute;
-    background-color: rgba(26, 26, 29, 0.95); /* Fondo semi-transparente */
+    background-color: rgba(26, 26, 29, 0.95); 
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 5px;
-    top: 100%; /* Posicionado justo debajo del enlace principal */
+    top: 100%; 
     left: 0;
     z-index: 1000;
 }
@@ -131,32 +133,30 @@ h1{
 }
 
 .dropdown-content a {
-    color: #C5C6C7; /* Texto gris claro */
+    color: #C5C6C7; 
     padding: 12px 16px;
     display: block;
     text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #00BFFF; /* Fondo azul al pasar el cursor */
+    background-color: #00BFFF; 
     color: #fff;
 }
 
-/* Mostrar el Dropdown al pasar el cursor */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Responsive Design: Menú Desplegable en Móviles */
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
         align-items: center;
-        display: none; /* Oculto por defecto en móviles */
+        display: none; 
         width: 100%;
         background-color: #1a1a1d;
         position: absolute;
-        top: 60px; /* Ajusta según la altura del Barra */
+        top: 60px; 
         left: 0;
     }
 
@@ -173,14 +173,14 @@ h1{
     }
 
     .dropdown:hover .dropdown-content {
-        display: none; /* Desactiva el hover en móviles */
+        display: none; 
     }
 
     .dropdown.active .dropdown-content {
-        display: block; /* Muestra el submenú al hacer clic */
+        display: block; 
     }
 
-    /* Botón de Menú (Hamburger) */
+    /* Botón de Menú*/
     .menu-toggle {
         display: block;
         position: absolute;
@@ -199,8 +199,8 @@ h1{
 
 
 .footer {
-    background-color: #1a1a1d; /* Gris oscuro */
-    color: #FFD700; /* Amarillo */
+    background-color: #1a1a1d; 
+    color: #FFD700; 
     padding: 40px 20px;
     font-family: 'Star Jedi', sans-serif;
 }
@@ -214,7 +214,7 @@ h1{
 }
 
 .footer-section {
-    flex: 1 1 200px; /* Flexibilidad para adaptarse */
+    flex: 1 1 200px; 
     margin: 20px;
 }
 
@@ -235,20 +235,20 @@ h1{
 }
 
 .footer-section ul li a {
-    color: #C5C6C7; /* Texto gris claro */
+    color: #C5C6C7; 
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #00BFFF; /* Azul */
+    color: #00BFFF; 
 }
 
 /* Footer Estilos */
 
 .footer {
-    background-color: #1a1a1d; /* Gris oscuro */
-    color: #FFD700; /* Amarillo */
+    background-color: #1a1a1d; 
+    color: #FFD700; 
     padding: 40px 20px;
     font-family: 'Star Jedi', sans-serif;
 }
@@ -262,7 +262,7 @@ h1{
 }
 
 .footer-section {
-    flex: 1 1 200px; /* Flexibilidad para adaptarse */
+    flex: 1 1 200px; 
     margin: 20px;
 }
 
@@ -283,13 +283,13 @@ h1{
 }
 
 .footer-section ul li a {
-    color: #C5C6C7; /* Texto gris claro */
+    color: #C5C6C7; 
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #00BFFF; /* Azul */
+    color: #00BFFF; 
 }
 
 .social-icons {
@@ -301,12 +301,12 @@ h1{
 .social-icons a img {
     width: 100px;
     height: 30px;
-    filter: brightness(0) invert(1); /* Asegura que los iconos sean visibles */
+    filter: brightness(0) invert(1); 
     transition: filter 0.3s;
 }
 
 .social-icons a img:hover {
-    filter: brightness(0) invert(0.7); /* Cambio de color al pasar el ratón */
+    filter: brightness(0) invert(0.7); 
 }
 
 .footer-bottom {
