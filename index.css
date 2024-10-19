@@ -244,22 +244,6 @@ h1{
     color: #00BFFF; /* Azul */
 }
 
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a img {
-    width: 30px;
-    height: 30px;
-    filter: brightness(0) invert(1); /* Asegura que los iconos sean visibles */
-    transition: filter 0.3s;
-}
-
-.social-icons a img:hover {
-    filter: brightness(0) invert(0.7); /* Cambio de color al pasar el ratón */
-}
-
 /* Footer Estilos */
 
 .footer {
@@ -311,10 +295,11 @@ h1{
 .social-icons {
     display: flex;
     gap: 15px;
+    justify-content: space-between;
 }
 
 .social-icons a img {
-    width: 30px;
+    width: 100px;
     height: 30px;
     filter: brightness(0) invert(1); /* Asegura que los iconos sean visibles */
     transition: filter 0.3s;
