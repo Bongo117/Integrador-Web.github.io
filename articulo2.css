@@ -110,6 +110,21 @@ p {
     font-size: 16px;
     line-height: 1.6;
 }
+.secuelas {
+    flex: 1;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+.secuelas img {
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;}
+
 @keyframes show {
     from {
         opacity: 0;
