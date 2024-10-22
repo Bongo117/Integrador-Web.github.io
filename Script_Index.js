@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Cambiar el fondo cada 5 segundos 
-    setInterval(changeBackground, 5000);
+    setInterval(changeBackground, 3000);
 
     // Cambiar el fondo al cargar la página por primera vez
     changeBackground();

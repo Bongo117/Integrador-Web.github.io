@@ -58,32 +58,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }
 });
 
-const images = [
-    'url("img/4.jpg")',
-    'url("img/6.jpg")',
-    'url("img/fondo2.jpg")',
-    'url("img/fondo3.jpg")',
-    'url("img/fondo1.jpeg")',
-    'url("img/fondo5.jpg")',
-    'url("img/Halcón milenario.png")',
-    
-];
-
-let currentIndex = 0;
-
-// Función para cambiar el fondo
-function changeBackground() {
-    // Cambiar el fondo del body
-    document.body.style.backgroundImage = images[currentIndex];
-
-    currentIndex = (currentIndex + 1) % images.length; // Volver al inicio al llegar al final
-}
-
-// Cambiar el fondo cada 5 segundos 
-setInterval(changeBackground, 2000);
-
-// Cambiar el fondo al cargar la página por primera vez
-changeBackground();
 
 // Función para mostrar errores debajo del campo correspondiente
 function mostrarError(element, mensaje) {
