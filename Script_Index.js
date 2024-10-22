@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         'url("img/espacio.png")',
         'url("img/1.jpg")',
         'url("img/2.jpg")',
+        'url("img/4.jpg")',
         'url("img/5.jpg")',
         'url("img/8.jpg")',
         'url("img/10.jpg")',

@@ -59,11 +59,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 });
 
 const images = [
-
+    'url("img/4.jpg")',
+    'url("img/6.jpg")',
     'url("img/fondo2.jpg")',
     'url("img/fondo3.jpg")',
-    'url("img/fondo4.jpg")',
+    'url("img/fondo1.jpeg")',
     'url("img/fondo5.jpg")',
+    'url("img/Halcón milenario.png")',
     
 ];
 
@@ -78,7 +80,7 @@ function changeBackground() {
 }
 
 // Cambiar el fondo cada 5 segundos 
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 2000);
 
 // Cambiar el fondo al cargar la página por primera vez
 changeBackground();
