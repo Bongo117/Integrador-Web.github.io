@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
         'url("img/5.jpg")',
         'url("img/8.jpg")',
         'url("img/10.jpg")',
-        'url("img/11.jpg")',
         'url("img/Halcón milenario.png")',
         'url("img/fondo1.jpeg")',
     ];
