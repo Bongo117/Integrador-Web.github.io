@@ -1,13 +1,11 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevenir el envío del formulario
-
-    // Limpiar mensajes anteriores
+document.getElementById("Contacto").addEventListener("submit", function(event) {
+    event.preventDefault();
     limpiarErrores();
 
-    // Obtener valores de los campos
-    let name = document.getElementById("name");
+  
+    let name = document.getElementById("nombre");
     let email = document.getElementById("email");
-    let message = document.getElementById("message");
+    let message = document.getElementById("mensaje");
 
     let valid = true;
     
@@ -23,7 +21,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         name.style.border = ""; 
     }
 
-    // Validar email
     if (email.value.trim() === "") {
         valid = false;
         email.style.border = "2px solid red"; 
@@ -39,7 +36,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         }
     }
 
-    // Validar mensaje
     if (message.value.trim() === "") {
         valid = false;
         message.style.border = "2px solid red"; 
@@ -52,21 +48,17 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         message.style.border = ""; 
     }
 
-    // Si todo es válido, se envía el formulario
     if (valid) {
-        document.getElementById("formMessage").innerHTML = "<p style='color:green;'>Formulario enviado correctamente</p>";
+        document.getElementById("Contactomsj").innerHTML = "<p style='color:green;'>Formulario enviado correctamente</p>";
     }
 });
 
-
-// Función para mostrar errores debajo del campo correspondiente
 function mostrarError(element, mensaje) {
-    element.insertAdjacentHTML('afterend', `<p class="error-message" style="color: red; font-size: 12px;">${mensaje}</p>`);
+    element.insertAdjacentHTML('afterend', `<p class="mensajedeerror" style="color: red; font-size: 12px;">${mensaje}</p>`);
 }
 
-// Función para limpiar errores anteriores
 function limpiarErrores() {
-    let errorMessages = document.querySelectorAll(".error-message");
+    let errorMessages = document.querySelectorAll(".mensajedeerror");
     errorMessages.forEach(function(msg) {
         msg.remove();
     });

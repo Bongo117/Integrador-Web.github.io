@@ -55,7 +55,7 @@ body{
 }
 
 
-.contact-container {
+.Contactovich {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@ body{
 }
 
 
-form#contactForm {
+form#Contacto {
     margin-top: 60px;
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(10px); 
@@ -77,20 +77,20 @@ form#contactForm {
     max-width: 500px;
 }
 
-form#contactForm h2 {
+form#Contacto h2 {
     text-align: center;
     color: #FFD700;
     margin-bottom: 20px;
 }
 
-form#contactForm label {
+form#Contacto label {
     display: block;
     margin-bottom: 5px;
     color: #FFD700;
 }
 
-form#contactForm input,
-form#contactForm textarea {
+form#Contacto input,
+form#Contacto textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -101,12 +101,12 @@ form#contactForm textarea {
     font-size: 1em;
 }
 
-form#contactForm input::placeholder,
-form#contactForm textarea::placeholder {
+form#Contacto input::placeholder,
+form#Contacto textarea::placeholder {
     color: #C5C6C7;
 }
 
-form#contactForm button {
+form#Contacto button {
     width: 100%;
     padding: 10px;
     background-color: #f9f105; 
@@ -119,18 +119,16 @@ form#contactForm button {
 }
 
 
-form#contactForm button:hover {
+form#Contacto button:hover {
     background-color: #FFD700; 
 }
 
-/* Mensaje del Formulario */
-#formMessage {
+#Contactomsj {
     text-align: center;
     margin-top: 15px;
     font-size: 1em;
 }
 
-/* Modal */
 .modal {
     display: none; 
     position: fixed;
@@ -165,8 +163,6 @@ form#contactForm button:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
-/* Footer Estilos */
 
 .Piedepag {
     background-color: #1a1a1d; 
