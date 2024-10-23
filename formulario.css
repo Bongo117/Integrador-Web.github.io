@@ -168,60 +168,60 @@ form#contactForm button:hover {
 
 /* Footer Estilos */
 
-.footer {
+.Piedepag {
     background-color: #1a1a1d; 
     color: #FFD700; 
     padding: 40px 20px;
     font-family: 'Star Jedi', sans-serif;
 }
 
-.footer-container {
+.Cosaspiedepag {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
-.footer-section {
+.PIE {
     flex: 1 1 200px; 
     margin: 20px;
 }
-.footer-section h3 {
+.PIE h3 {
     border-bottom: 2px solid #FFD700;
     padding-bottom: 10px;
     margin-bottom: 15px;
     color: #FFD700;
 }
-.footer-section ul {
+.PIE ul {
     list-style: none;
     padding: 0;
 }
-.footer-section ul li {
+.PIE ul li {
     margin-bottom: 10px;
 }
-.footer-section ul li a {
+.PIE ul li a {
     color: #C5C6C7; 
     text-decoration: none;
     transition: color 0.3s;
 }
-.footer-section ul li a:hover {
+.PIE ul li a:hover {
     color: #00BFFF;
 }
-.social-icons {
+.Redes {
     display: flex;
     gap: 15px;
     justify-content: space-between;
 }
-.social-icons a img {
+.Redes a img {
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(1); 
     transition: filter 0.3s;
 }
-.social-icons a img:hover {
+.Redes a img:hover {
     filter: brightness(0) invert(0.7); 
 }
-.footer-bottom {
+.Fondopag {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid #FFD700;
@@ -231,12 +231,12 @@ form#contactForm button:hover {
 }
 
 @media (max-width: 768px) {
-    .footer-container {
+    .Cosaspiedepag {
         flex-direction: column;
         align-items: center;
     }
     
-    .footer-section {
+    .PIE {
         margin: 10px 0;
         text-align: center;
     }
