@@ -5,11 +5,6 @@
     font-style: normal;
 }
 
-p strong {
-    color: #FFD700;
-    
-}
-
 .Piedepag {
     background-color: #1a1a1d;
     color: #FFD700;
@@ -147,24 +142,34 @@ body {
 }
 
 :root {
-    --clr: rgb(1, 17, 244);/
+    --clr: rgb(116, 114, 16);/
 }
 
-
 h1 {
-    font-family: 'Starjedi', sans-serif;
+    font-family: 'Starjedi';
     color: #FFD700;
     text-align: center;
     margin-top: 60px;
-}
+    filter: drop-shadow(0 0 15px var(--clr));
+    text-shadow: -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    ;
 
+}
 h2 {
     font-size: 20px;
     margin-bottom: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     color: #FFD700;
     text-align: center;
     margin-top: 30px;
+    filter: drop-shadow(0 0 15px var(--clr));
+    text-shadow: -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
 }
 
 .contenedor-articulo {
@@ -187,14 +192,28 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    z-index: 1;
+    background: #1919199a;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 22px;
     line-height: 1.6;
-    text-shadow: -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
-    ;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    padding: 10px;
+    margin-bottom: 20px; 
+    color: #ffffff; 
 }
+
+p strong {
+    z-index: 2;
+    color: #FFD700;
+    filter: drop-shadow(0 0 15px var(--clr));
+    position: relative;
+    padding: 3px; 
+    border-radius: 5px; 
+    display: inline;
+}
+
 
 .secuelas {
     flex: 1;
@@ -207,11 +226,6 @@ p {
     border: 2px solid #FFD700;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
 }
 
 @keyframes show {
