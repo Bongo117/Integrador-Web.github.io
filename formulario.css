@@ -61,8 +61,8 @@ body{
     align-items: center;
     flex: 1;
     padding: 20px;
-    flex-direction: column; /* Asegura que el formulario y el mensaje estén en columna */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    flex-direction: column; 
+    width: 100%; 
 }
 
 
