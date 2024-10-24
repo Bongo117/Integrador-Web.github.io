@@ -49,7 +49,7 @@ document.getElementById("Contacto").addEventListener("submit", function(event) {
     }
 
     if (valid) {
-        document.getElementById("Contactomsj").innerHTML = "<p style='color:green;'>Formulario enviado correctamente</p>";
+        document.getElementById("Contactomsj").innerHTML = "<p'>Formulario enviado correctamente</p>";
     }
 });
 formMessage.style.display = "block";  

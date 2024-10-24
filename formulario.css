@@ -129,9 +129,11 @@ form#Contacto button:hover {
     text-align: center;
     margin-top: 15px;
     font-size: 1em;
-    width: 100%; 
-    clear: both; 
-    
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    clear: both;  /* Limpia cualquier flotante si existiera */
+    color: #32CD32;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+
 }
 
 .modal {
