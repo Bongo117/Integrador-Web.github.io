@@ -8,7 +8,7 @@ body {
 
 body{
     background-image: url(img/4.jpg);
-  background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,7 +55,7 @@ body{
 }
 
 
-.contact-container {
+.Contactovich {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@ body{
 }
 
 
-form#contactForm {
+form#Contacto {
     margin-top: 60px;
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(10px); 
@@ -79,20 +79,20 @@ form#contactForm {
     max-width: 500px;
 }
 
-form#contactForm h2 {
+form#Contacto h2 {
     text-align: center;
     color: #FFD700;
     margin-bottom: 20px;
 }
 
-form#contactForm label {
+form#Contacto label {
     display: block;
     margin-bottom: 5px;
     color: #FFD700;
 }
 
-form#contactForm input,
-form#contactForm textarea {
+form#Contacto input,
+form#Contacto textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -103,12 +103,12 @@ form#contactForm textarea {
     font-size: 1em;
 }
 
-form#contactForm input::placeholder,
-form#contactForm textarea::placeholder {
+form#Contacto input::placeholder,
+form#Contacto textarea::placeholder {
     color: #C5C6C7;
 }
 
-form#contactForm button {
+form#Contacto button {
     width: 100%;
     padding: 10px;
     background-color: #f9f105; 
@@ -121,12 +121,11 @@ form#contactForm button {
 }
 
 
-form#contactForm button:hover {
+form#Contacto button:hover {
     background-color: #FFD700; 
 }
 
-/* Mensaje del Formulario */
-#formMessage {
+#Contactomsj {
     text-align: center;
     margin-top: 15px;
     font-size: 1em;
@@ -134,7 +133,6 @@ form#contactForm button:hover {
     clear: both;  /* Limpia cualquier flotante si existiera */
 }
 
-/* Modal */
 .modal {
     display: none; 
     position: fixed;
@@ -170,62 +168,60 @@ form#contactForm button:hover {
     cursor: pointer;
 }
 
-/* Footer Estilos */
-
-.footer {
+.Piedepag {
     background-color: #1a1a1d; 
     color: #FFD700; 
     padding: 40px 20px;
     font-family: 'Star Jedi', sans-serif;
 }
 
-.footer-container {
+.Cosaspiedepag {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
-.footer-section {
+.PIE {
     flex: 1 1 200px; 
     margin: 20px;
 }
-.footer-section h3 {
+.PIE h3 {
     border-bottom: 2px solid #FFD700;
     padding-bottom: 10px;
     margin-bottom: 15px;
     color: #FFD700;
 }
-.footer-section ul {
+.PIE ul {
     list-style: none;
     padding: 0;
 }
-.footer-section ul li {
+.PIE ul li {
     margin-bottom: 10px;
 }
-.footer-section ul li a {
+.PIE ul li a {
     color: #C5C6C7; 
     text-decoration: none;
     transition: color 0.3s;
 }
-.footer-section ul li a:hover {
+.PIE ul li a:hover {
     color: #00BFFF;
 }
-.social-icons {
+.Redes {
     display: flex;
     gap: 15px;
     justify-content: space-between;
 }
-.social-icons a img {
+.Redes a img {
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(1); 
     transition: filter 0.3s;
 }
-.social-icons a img:hover {
+.Redes a img:hover {
     filter: brightness(0) invert(0.7); 
 }
-.footer-bottom {
+.Fondopag {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid #FFD700;
@@ -235,12 +231,12 @@ form#contactForm button:hover {
 }
 
 @media (max-width: 768px) {
-    .footer-container {
+    .Cosaspiedepag {
         flex-direction: column;
         align-items: center;
     }
     
-    .footer-section {
+    .PIE {
         margin: 10px 0;
         text-align: center;
     }
