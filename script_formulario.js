@@ -57,6 +57,8 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         document.getElementById("formMessage").innerHTML = "<p style='color:green;'>Formulario enviado correctamente</p>";
     }
 });
+formMessage.style.display = "block";  // Asegura que el mensaje sea visible
+
 
 
 // Función para mostrar errores debajo del campo correspondiente
