@@ -61,8 +61,8 @@ body{
     align-items: center;
     flex: 1;
     padding: 20px;
-    flex-direction: column; /* Asegura que el formulario y el mensaje estén en columna */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    flex-direction: column; 
+    width: 100%; 
 }
 
 
@@ -129,8 +129,9 @@ form#Contacto button:hover {
     text-align: center;
     margin-top: 15px;
     font-size: 1em;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    clear: both;  /* Limpia cualquier flotante si existiera */
+    width: 100%; 
+    clear: both; 
+    
 }
 
 .modal {

@@ -52,7 +52,7 @@ document.getElementById("Contacto").addEventListener("submit", function(event) {
         document.getElementById("Contactomsj").innerHTML = "<p style='color:green;'>Formulario enviado correctamente</p>";
     }
 });
-formMessage.style.display = "block";  // Asegura que el mensaje sea visible
+formMessage.style.display = "block";  
 
 
 function mostrarError(element, mensaje) {
