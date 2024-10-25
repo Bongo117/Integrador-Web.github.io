@@ -259,6 +259,54 @@ h1,
 h2,
 .contenedor-articulo,
 .Barra,
-.CosasBarra {
+.CosasBarra, .contenedor-carrusel,.imagenes-carrusel,.imagenes-carrusel img, .boton, .anterior,.siguiente,.rodaje {
     animation: show 2s ease-in-out;
 }
+
+.rodaje{
+    text-align: center;
+}
+.contenedor-carrusel {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagenes-carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.imagenes-carrusel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFD700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 1;
+}
+
+.anterior {
+    left: -50px; 
+}
+
+.siguiente {
+    right: -50px; 
+}
+

@@ -19,3 +19,38 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(changeBackground, 3000);
   changeBackground();
 });
+const imagenesRodajes = [
+  "img/rodaje5.jpg.jfif",
+  "img/rodaje1.jpg.jfif",
+  "img/rodaje2.jpg.jfif",
+  "img/rodaje3.jpg.jfif",
+  "img/rodaje4.jpg.jfif"
+  
+];
+
+let indiceActual = 0;
+const carrusel = document.getElementById('carrusel');
+
+// Función para mostrar la imagen actual
+function mostrarImagen() {
+  carrusel.innerHTML = `<img src="${imagenesRodajes[indiceActual]}" alt="Imagen de rodaje">`;
+}
+
+// Función para avanzar a la siguiente imagen
+function siguienteImagen() {
+  indiceActual = (indiceActual + 1) % imagenesRodajes.length;
+  mostrarImagen();
+}
+
+// Función para retroceder a la imagen anterior
+function anteriorImagen() {
+  indiceActual = (indiceActual - 1 + imagenesRodajes.length) % imagenesRodajes.length;
+  mostrarImagen();
+}
+
+// Event listeners para los botones
+document.getElementById('siguiente').addEventListener('click', siguienteImagen);
+document.getElementById('anterior').addEventListener('click', anteriorImagen);
+
+// Mostrar la primera imagen al cargar la página
+mostrarImagen();
