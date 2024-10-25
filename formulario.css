@@ -129,12 +129,36 @@ form#Contacto button:hover {
     text-align: center;
     margin-top: 15px;
     font-size: 1em;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    clear: both;  /* Limpia cualquier flotante si existiera */
+    width: 100%; 
+    clear: both;  
     color: #32CD32;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 
 }
+#formMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00FF00;
+    text-shadow: 3px 3px 8px rgba(0, 255, 0, 0.8); /* Sombra más marcada */
+}
+
+#datosEnviados {
+    background-color: black;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
 
 .modal {
     display: none; 
