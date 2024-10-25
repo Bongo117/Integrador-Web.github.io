@@ -158,6 +158,24 @@ form#Contacto button:hover {
     max-width: 500px;
     margin: 20px auto;
 }
+.datos-enviados {
+    background-color: black;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.datos-enviados h3 {
+    text-align: center;
+    color: #FFD700;
+    font-family: 'Starjedi', sans-serif;
+}
+
+.datos-enviados p {
+    font-family: Arial, sans-serif;
+}
 
 
 .modal {
