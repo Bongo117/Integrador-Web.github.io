@@ -2,17 +2,14 @@
     font-family: 'Starjedi';
     src: url(Starjedi.ttf) format('truetype');
 }
-body {
-    background-size: cover;  
-}
 
-body{
+body {
     background-image: url(img/4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    cursor: url('img/Sable\ de\ luz.png'), auto;
+    cursor: url('img/Sable de luz.png'), auto;
     font-family: Starjedi;
 }
 
@@ -20,7 +17,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    left: 0%;
+    left: 0;
     z-index: 1000;
     padding: 10px 0;
     display: flex;
@@ -28,8 +25,6 @@ body{
     align-items: center;
     background-color: #1a1a1d;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-
-    
 }
 
 .CosasBarra {
@@ -43,6 +38,7 @@ body{
 .CosasBarra li {
     display: inline;
 }
+
 .CosasBarra a {
     text-decoration: none;
     color: #FFD700; 
@@ -54,7 +50,6 @@ body{
     color: #00BFFF; 
 }
 
-
 .Contactovich {
     display: flex;
     justify-content: center;
@@ -63,11 +58,10 @@ body{
     padding: 20px;
     flex-direction: column; 
     width: 100%; 
+    margin-top: 60px; 
 }
 
-
 form#Contacto {
-    margin-top: 60px;
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -120,7 +114,6 @@ form#Contacto button {
     transition: background-color 0.3s;
 }
 
-
 form#Contacto button:hover {
     background-color: #FFD700; 
 }
@@ -133,84 +126,22 @@ form#Contacto button:hover {
     clear: both;  
     color: #32CD32;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-
 }
-#formMessage {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #00FF00;
-    text-shadow: 3px 3px 8px rgba(0, 255, 0, 0.8); /* Sombra más marcada */
+.feedback h3 {font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 25px;
+margin-top: 10px;}
+.feedback p strong{font-family: 'Arial Narrow Bold', sans-serif;
+font-size: 19px;}
+.feedback p {font-family: 'Arial';
 }
-
-#datosEnviados {
-    background-color: black;
+.feedback {
+    margin: 0% 32%;
+    width: 35%;
+    padding: 30px;
+    background-color: #1a1a1d;
     color: #FFD700;
-    border: 2px solid #FFD700;
-    margin-top: 20px;
-    padding: 15px;
     border-radius: 10px;
-    font-size: 1.1em;
-    line-height: 1.5;
-    text-align: left;
-    width: 80%;
-    max-width: 500px;
-    margin: 20px auto;
-}
-.datos-enviados {
-    background-color: black;
-    color: #FFD700;
-    border: 2px solid #FFD700;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
-}
-
-.datos-enviados h3 {
-    text-align: center;
-    color: #FFD700;
-    font-family: 'Starjedi', sans-serif;
-}
-
-.datos-enviados p {
-    font-family: Arial, sans-serif;
-}
-
-
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8); 
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-    border-radius: 10px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    margin-bottom: 5%;
 }
 
 .Piedepag {
@@ -227,45 +158,55 @@ form#Contacto button:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .PIE {
     flex: 1 1 200px; 
     margin: 20px;
 }
+
 .PIE h3 {
     border-bottom: 2px solid #FFD700;
     padding-bottom: 10px;
     margin-bottom: 15px;
     color: #FFD700;
 }
+
 .PIE ul {
     list-style: none;
     padding: 0;
 }
+
 .PIE ul li {
     margin-bottom: 10px;
 }
+
 .PIE ul li a {
     color: #C5C6C7; 
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .PIE ul li a:hover {
     color: #00BFFF;
 }
+
 .Redes {
     display: flex;
     gap: 15px;
     justify-content: space-between;
 }
+
 .Redes a img {
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(1); 
     transition: filter 0.3s;
 }
+
 .Redes a img:hover {
     filter: brightness(0) invert(0.7); 
 }
+
 .Fondopag {
     text-align: center;
     margin-top: 20px;
@@ -286,4 +227,3 @@ form#Contacto button:hover {
         text-align: center;
     }
 }
-

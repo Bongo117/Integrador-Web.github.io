@@ -6,7 +6,7 @@ document.getElementById("Contacto").addEventListener("submit", function(event) {
     let telefono = document.getElementById("telefono");
 
     let esValido = true; 
-    
+
     if (nombre.value.trim() === "") {
         esValido = false;
         nombre.style.border = "2px solid red"; 
@@ -52,9 +52,13 @@ document.getElementById("Contacto").addEventListener("submit", function(event) {
             telefono.style.border = ""; 
         }
     }
+
     if (esValido) {
         mostrarFeedback(nombre, correo, telefono);
         limpiarFormulario(nombre, correo, telefono);
+        document.getElementById("datosenviados").style.display = "block"; 
+    } else {
+        document.getElementById("datosenviados").style.display = "none"; 
     }
 });
 
@@ -67,12 +71,9 @@ function limpiarErrores() {
 }
 
 function mostrarFeedback(nombre, correo, telefono) {
-    document.getElementById("Contactomsj").innerHTML = `<p style="font-weight: bold; text-shadow: 3px 3px 10px black;">Formulario enviado correctamente</p>`;
-    document.getElementById("datosEnviados").innerHTML = `
-        <p><strong>Nombre:</strong> ${nombre.value}</p>
-        <p><strong>Correo Electrónico:</strong> ${correo.value}</p>
-        <p><strong>Teléfono:</strong> ${telefono.value}</p>
-    `;
+    document.getElementById("feedbackNombre").innerText = nombre.value; 
+    document.getElementById("feedbackEmail").innerText = correo.value; 
+    document.getElementById("feedbackTel").innerText = telefono.value; 
 }
 
 function limpiarFormulario(nombre, correo, telefono) {
