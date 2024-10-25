@@ -51,10 +51,13 @@
 .PIE ul li a:hover {
     color: #00BFFF;
 }
-.PIE p{
+
+.PIE p {
     font-size: 0.9em;
-    color:#C5C6C7;;
+    color: #C5C6C7;
+    ;
 }
+
 .Redes {
     display: flex;
     gap: 15px;
@@ -80,6 +83,7 @@
     color: #C5C6C7;
     font-size: 0.9em;
 }
+
 .Fondopag p {
     text-align: center;
     margin-top: 20px;
@@ -171,6 +175,7 @@ h1 {
     ;
 
 }
+
 h2 {
     font-size: 30px;
     margin-bottom: 40px;
@@ -213,8 +218,8 @@ p {
     line-height: 1.6;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     padding: 10px;
-    margin-bottom: 20px; 
-    color: #ffffff; 
+    margin-bottom: 20px;
+    color: #ffffff;
 }
 
 p strong {
@@ -222,8 +227,8 @@ p strong {
     color: #FFD700;
     filter: drop-shadow(0 0 15px var(--clr));
     position: relative;
-    padding: 3px; 
-    border-radius: 5px; 
+    padding: 3px;
+    border-radius: 5px;
     display: inline;
 }
 
@@ -232,13 +237,13 @@ p strong {
     flex: 1;
     margin: 0 10px;
     text-align: justify;
-    
+
 }
 
 .secuelas img {
     border: 2px solid #FFD700;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  
+
 }
 
 @keyframes show {
@@ -259,13 +264,21 @@ h1,
 h2,
 .contenedor-articulo,
 .Barra,
-.CosasBarra, .contenedor-carrusel,.imagenes-carrusel,.imagenes-carrusel img, .boton, .anterior,.siguiente,.rodaje {
+.CosasBarra,
+.contenedor-carrusel,
+.imagenes-carrusel,
+.imagenes-carrusel img,
+.boton,
+.anterior,
+.siguiente,
+.rodaje {
     animation: show 2s ease-in-out;
 }
 
-.rodaje{
+.rodaje {
     text-align: center;
 }
+
 .contenedor-carrusel {
     width: 100%;
     max-width: 500px;
@@ -303,10 +316,9 @@ h2,
 }
 
 .anterior {
-    left: -50px; 
+    left: -50px;
 }
 
 .siguiente {
-    right: -50px; 
+    right: -50px;
 }
-
