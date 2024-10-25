@@ -115,7 +115,7 @@ body {
     border-radius: 50%;
     border: 10px solid var(--clr);
     background: #191919;
-    transition: 0.5s, background 1s;
+    transition: 0.5s;
     transition-delay: 0.75s, 1s;
     filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 30px var(--clr));
 }
