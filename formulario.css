@@ -41,13 +41,13 @@ body {
 
 .CosasBarra a {
     text-decoration: none;
-    color: #FFD700; 
+    color: #FFD700;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
 .CosasBarra a:hover {
-    color: #00BFFF; 
+    color: #00BFFF;
 }
 
 .Contactovich {
@@ -56,14 +56,14 @@ body {
     align-items: center;
     flex: 1;
     padding: 20px;
-    flex-direction: column; 
-    width: 100%; 
-    margin-top: 60px; 
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
 }
 
 form#Contacto {
-    background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); 
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 10px;
@@ -105,7 +105,7 @@ form#Contacto textarea::placeholder {
 form#Contacto button {
     width: 100%;
     padding: 10px;
-    background-color: #f9f105; 
+    background-color: #f9f105;
     color: #020202;
     border: none;
     border-radius: 5px;
@@ -115,25 +115,34 @@ form#Contacto button {
 }
 
 form#Contacto button:hover {
-    background-color: #FFD700; 
+    background-color: #FFD700;
 }
 
 #Contactomsj {
     text-align: center;
     margin-top: 15px;
     font-size: 1em;
-    width: 100%; 
-    clear: both;  
+    width: 100%;
+    clear: both;
     color: #32CD32;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
-.feedback h3 {font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-size: 25px;
-margin-top: 10px;}
-.feedback p strong{font-family: 'Arial Narrow Bold', sans-serif;
-font-size: 19px;}
-.feedback p {font-family: 'Arial';
+
+.feedback h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
 }
+
+.feedback p strong {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 19px;
+}
+
+.feedback p {
+    font-family: 'Arial';
+}
+
 .feedback {
     margin: 0% 32%;
     width: 35%;
@@ -145,8 +154,8 @@ font-size: 19px;}
 }
 
 .Piedepag {
-    background-color: #1a1a1d; 
-    color: #FFD700; 
+    background-color: #1a1a1d;
+    color: #FFD700;
     padding: 40px 20px;
     font-family: 'Star Jedi', sans-serif;
 }
@@ -160,7 +169,7 @@ font-size: 19px;}
 }
 
 .PIE {
-    flex: 1 1 200px; 
+    flex: 1 1 200px;
     margin: 20px;
 }
 
@@ -181,7 +190,7 @@ font-size: 19px;}
 }
 
 .PIE ul li a {
-    color: #C5C6C7; 
+    color: #C5C6C7;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -199,12 +208,12 @@ font-size: 19px;}
 .Redes a img {
     width: 30px;
     height: 30px;
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
     transition: filter 0.3s;
 }
 
 .Redes a img:hover {
-    filter: brightness(0) invert(0.7); 
+    filter: brightness(0) invert(0.7);
 }
 
 .Fondopag {
@@ -221,7 +230,7 @@ font-size: 19px;}
         flex-direction: column;
         align-items: center;
     }
-    
+
     .PIE {
         margin: 10px 0;
         text-align: center;
