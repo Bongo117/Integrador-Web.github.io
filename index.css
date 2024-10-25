@@ -51,7 +51,10 @@
 .PIE ul li a:hover {
     color: #00BFFF;
 }
-
+.PIE p{
+    font-size: 0.9em;
+    color:#C5C6C7;;
+}
 .Redes {
     display: flex;
     gap: 15px;
@@ -77,6 +80,15 @@
     color: #C5C6C7;
     font-size: 0.9em;
 }
+.Fondopag p {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #FFD700;
+    padding-top: 10px;
+    color: #C5C6C7;
+    font-size: 0.9em;
+}
+
 
 body {
     transition: background-image 2.5s ease-in-out;
